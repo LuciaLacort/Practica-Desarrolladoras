@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="#">
+
+</head>
+
+<body class="body">
+
+  <main class="contenedor" id="contenedor">
+    <form class="formulario" id="formulario" name="formulario">
+      <div id="registerPage">
+        <h1 class="titulo">Create Account</h1>
+
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="nombre">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" /><br />
+            <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p class="formulario__input-error">Rellene este campo</p>
+        </div>
+
+
+        <div class="formulario__grupo" id="grupo__email">
+          <label for="email" class="email">Email</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="email" id="email" /><br />
+            <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p class="formulario__input-error">Rellene este campo</p>
+        </div>
+
+
+        <div class="formulario__grupo" id="grupo__clave">
+          <label for="clave" class="clave">Clave</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="clave" id="clave" /><br />
+            <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p class="formulario__input-error">Rellene este campo</p>
+        </div>
+
+
+        <div class="formulario__grupo" id="grupo__confirmesuclave">
+          <label for="confirmesuclave" class="confirmesuclave">Confirme su clave</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="confirmesuclave" id="confirmesuclave" /><br />
+            <i class="formulario__validacion-estado fa-sharp fa-solid fa-circle-exclamation"></i>
+          </div>
+          <p class="formulario__input-error">Rellene este campo</p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <input class="formulario__btn" type="submit" name="ENVIAR" value="ENVIAR">
+        </div>
+
+
+      </div>
+      <div id="successPage" style="display: none;text-align:center;">
+        <h1 class="titulo" style="height: 90%;text-align:center;display:table;width:100%;">SE HA INSCRITO CORRECTAMENTE
+        </h1>
+      </div>
+    </form>
+  </main>
+  <script src="index.js" type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/cc33beee69.js" crossorigin="anonymous"></script>
+</body>
+<footer></footer>
+
+</html>

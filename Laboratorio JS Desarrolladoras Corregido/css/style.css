@@ -1,0 +1,135 @@
+:root{
+    --fondo: #242933;
+    --fondoFormulario: #2f3644;
+    --letras: #acbae1;
+    --boton:#6c62fb; 
+    --textoBoton:#FFFFFF;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+  /**Globales**/
+ 
+  
+.body{
+    background-color: var(--fondo);
+    padding: 5rem;
+}
+  
+
+.contenedor{
+    max-width: 300rem;
+    margin: auto;
+    align-items: center;
+    background-color: var(--fondo);
+}
+  
+
+.formulario{
+    margin: auto;
+    padding: 3rem;
+    width: 25%;
+    background-color: var(--fondoFormulario);
+    align-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--letras)
+}
+  
+
+.titulo{
+    color: var(--letras);
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+  
+  
+.nombre, .email, .clave, .confirmesuclave{
+    color: var(--letras);
+    text-align: left;
+    font-weight:200;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+.formulario__btn{
+    background-color: var(--boton);
+    color: var(--textoBoton);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    width: 100%;  
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: black;
+    margin-top: 2rem;
+    padding: 1rem;
+   
+
+}
+
+.formulario__input{
+    width: 100%;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    }
+
+.formulario__grupo-input{
+    position: relative;
+    margin-top: 2rem;
+}
+
+.formulario__input-error{
+    font-size: 12px;
+    margin: 0;
+    color: #bb2929;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 100;
+    font-size: 15px;
+    opacity: 0;
+}
+
+/*Validaciones*/
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-correcto .formulario__input{
+    border: 3px solid #1ed12d;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #bb2929;
+}
+.formulario__grupo{
+    margin: 2rem;
+}
+
